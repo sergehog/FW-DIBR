@@ -1,0 +1,20 @@
+I = single(imread('view1.png'));
+D = single(imread('disp1_noholes.png'));
+D(D<60) = nan;
+[h w] = size(D);
+HW = h * w;
+figure; imshow(D, []); colormap(pink);
+%%
+A = D(1430:end, :);
+A(A<130) = nan;
+D(1430:end, :) = A;
+figure; imshow(D, []); colormap(pink);
+
+%%
+L = get_laplacian(I);
+%%
+S = spdiags(double(~isnan(D(:))), 0, HW, HW);
+%%
+Y = D(:);
+Y(isnana)
+(S'*S + lambda*L)
