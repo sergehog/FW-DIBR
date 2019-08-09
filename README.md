@@ -5,5 +5,7 @@ This repository supports paper
 *Sergey Smirnov, Federica Battisti, Atanas P. Gotchev*
 Layered approach for improving the quality of free-viewpoint depth-image-based rendering images. J. Electronic Imaging 28(1): 013049 (2019)
 
+https://doi.org/10.1117/1.JEI.28.1.013049
+
 Here we demonstrate our implementations of the competitor approaches, as well as open our compensation methods.
 
